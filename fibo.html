@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fibo</title>
+</head>
+<body>
+<script>
+    let x = 1;
+    let y = 2;
+    let tong=0;
+    let dem = 0;
+    let n = +prompt("nhap n :")
+    while (dem < n) {
+        document.write(x+ "<br>")
+        tong += x;
+        let b = x;
+        x = y;
+        y = b + y;
+        dem++;
+
+    }
+    document.write(tong);
+</script>
+</body>
+</html>
